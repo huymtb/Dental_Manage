@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_main_tabbar"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/calendar_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_calendar"
+                        android:layout_width="@dimen/size_image_tabbar"
+                        android:layout_height="@dimen/size_image_tabbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@mipmap/ic_calendar" />
+
+                    <TextView
+                        android:id="@+id/tv_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_calendar"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/home"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/size_text_tabbar" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:id="@+id/chat_img_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_chat"
+                        android:layout_width="@dimen/size_image_tabbar"
+                        android:layout_height="@dimen/size_image_tabbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@mipmap/ic_chat" />
+
+                    <TextView
+                        android:id="@+id/tv_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_chat"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/chat"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/size_text_tabbar" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_unread_chat"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_marginTop="5.5dp"
+                    android:layout_toRightOf="@+id/chat_img_layout"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_unread"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_badge_number_chat"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/chat_img_layout"
+                    android:background="@drawable/circle_button"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/user_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="@dimen/size_image_tabbar"
+                        android:layout_height="@dimen/size_image_tabbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@mipmap/ic_user" />
+
+                    <TextView
+                        android:id="@+id/tv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_user"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/user"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/size_text_tabbar" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="@dimen/size_image_tabbar"
+                        android:layout_height="@dimen/size_image_tabbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@mipmap/ic_add" />
+
+                    <TextView
+                        android:id="@+id/tv_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_add"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/add"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/size_text_tabbar" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/setting_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_setting"
+                        android:layout_width="@dimen/size_image_tabbar"
+                        android:layout_height="@dimen/size_image_tabbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@mipmap/ic_setting" />
+
+                    <TextView
+                        android:id="@+id/tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_setting"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/setting"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/size_text_tabbar" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

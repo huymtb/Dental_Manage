@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:emojicon="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_edittext" />
+
+    <LinearLayout
+        android:id="@+id/item_receiver_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_time"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp">
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/tv_receiver_content_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/out_message_bg"
+            android:enabled="true"
+            android:focusable="true"
+            android:longClickable="true"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textIsSelectable="true"
+            emojicon:emojiconSize="25sp"
+            android:textSize="@dimen/size_edittext" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_receiver_time_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="2dp"
+                android:paddingBottom="5dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_receiver_item_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/item_receiver_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

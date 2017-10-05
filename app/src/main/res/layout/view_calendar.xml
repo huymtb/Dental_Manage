@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/row_day_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_slash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_morning"
+            android:gravity="center"
+            android:text="@string/morning"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_afternoon"
+            android:gravity="center"
+            android:text="@string/afternoon"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_monday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_monday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_weekday"
+            android:gravity="center"
+            android:text="@string/monday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_monday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="9:00 ~ 12:00"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_monday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="14:00 ~ 19:00"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_tuesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_tuesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_weekday"
+            android:gravity="center"
+            android:text="@string/tuesday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_tuesday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="9:00 ~ 12:00"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_tuesday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="14:00 ~ 19:00"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_wednesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_wednesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_weekday"
+            android:gravity="center"
+            android:text="@string/wednesday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_wednesday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="9:00 ~ 12:00"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_wednesday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="14:00 ~ 19:00"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_thursday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_thursday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_weekday"
+            android:gravity="center"
+            android:text="@string/thursday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_thursday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="9:00 ~ 12:00"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_thursday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="14:00 ~ 19:00"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_friday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_friday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_weekday"
+            android:gravity="center"
+            android:text="@string/friday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_friday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="9:00 ~ 12:00"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_friday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="14:00 ~ 19:00"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_saturday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_saturday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_holiday"
+            android:gravity="center"
+            android:text="@string/saturday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_saturday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="10:00 ~ 15:00"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_saturday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="@string/text_disable"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_sunday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_sunday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_holiday"
+            android:gravity="center"
+            android:text="@string/sunday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_sunday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="@string/text_disable"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_sunday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="@string/text_disable"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_holiday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_height_calendar">
+
+        <TextView
+            android:id="@+id/tv_holiday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_holiday"
+            android:gravity="center"
+            android:text="@string/holiday"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_holiday_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="@string/text_disable"
+            android:textSize="@dimen/size_edittext" />
+
+        <TextView
+            android:id="@+id/tv_holiday_afternoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_cell_white"
+            android:gravity="center"
+            android:text="@string/text_disable"
+            android:textSize="@dimen/size_edittext" />
+    </TableRow>
+
+</TableLayout>

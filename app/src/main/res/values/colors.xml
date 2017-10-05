@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F4DA3</color>
+    <color name="colorPrimaryDark">#0E3177</color>
+    <color name="colorAccent">#F3373B</color>
+    <color name="colorButtonLogin">#2358BC</color>
+    <color name="lineView">#12000000</color>
+    <color name="strokeEditText">#B1BCBE</color>
+    <color name="medium_dark_gray">#4a4a4a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorDisable">#82B1FF</color>
+    <color name="colorListBackground">#EFEBE9</color>
+    <color name="colorLightOrange">#FBF7F6</color>
+    <color name="colorLightYellow">#F1F0EE</color>
+    <color name="textColorLabel">#878787</color>
+    <color name="textColorRemember">#646569</color>
+    <color name="morningBackgroundColor">#FEEBC3</color>
+    <color name="afternoonBackgroundColor">#CFDFFE</color>
+    <color name="weekdayBackgroundColor">#E2EFCE</color>
+    <color name="holidayBackgroundColor">#FEC5BB</color>
+    <color name="borderCalendarColor">#C4C4C4</color>
+    <color name="gray">#bbbbbb</color>
+</resources>

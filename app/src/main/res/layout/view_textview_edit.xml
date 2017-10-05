@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_time"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_edittext" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_edit" />
+
+            <ImageView
+                android:id="@+id/iv_check"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/background_button_check"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_toLeftOf="@+id/iv_check"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/background_button_delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="8dp"
+            android:paddingTop="10dp">
+
+            <com.prostage.dental_manage.views.ExtendedEditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_corner"
+                android:padding="5dp"
+                android:textSize="@dimen/size_edittext"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_edittext" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

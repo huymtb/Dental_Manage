@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "614618277389",
+    "firebase_url": "https://dentalapp-ada99.firebaseio.com",
+    "project_id": "dentalapp-ada99",
+    "storage_bucket": "dentalapp-ada99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614618277389:android:5c769f0b3068dc4b",
+        "android_client_info": {
+          "package_name": "com.prostage.l_pha.dental_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614618277389-q9gsk8alm3n9vkr22q4djar7rlvbad6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUvMOTvquzzwDdbsjyW_ANsJc61ptWOzg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614618277389:android:3a2efbe44a6390a6",
+        "android_client_info": {
+          "package_name": "com.prostage.dental_manage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614618277389-cuh1kki5757o7vo10p7ue930v5bftnpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prostage.dental_manage",
+            "certificate_hash": "eaf9e9cb1b6f2f8b7de974fb882a54bf96132a5f"
+          }
+        },
+        {
+          "client_id": "614618277389-q9gsk8alm3n9vkr22q4djar7rlvbad6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUvMOTvquzzwDdbsjyW_ANsJc61ptWOzg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614618277389-q9gsk8alm3n9vkr22q4djar7rlvbad6u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "614618277389-7r4hpbjj6hfls7nt98ooa34u2f1mllpv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.stagegroup.DentalManageApp"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

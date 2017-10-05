@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="34.5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/accept"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/question_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/medium_dark_gray" />
+
+    <TextView
+        android:id="@+id/allow_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="22dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="sans-serif-medium"
+        android:padding="8dp"
+        android:text="@string/ok"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16.5sp" />
+
+    <TextView
+        android:id="@+id/deny_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/allow_txt"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/allow_txt"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="sans-serif-medium"
+        android:padding="8dp"
+        android:text="@string/cancel"
+        android:textColor="@color/textColorLabel"
+        android:textSize="16.5sp" />
+
+</RelativeLayout>

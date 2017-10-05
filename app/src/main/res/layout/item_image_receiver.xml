@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_edittext" />
+
+    <LinearLayout
+        android:id="@+id/item_receiver_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_time"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            app:cardCornerRadius="2dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/iv_receiver_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="300dp"
+                android:maxWidth="300dp"
+                android:minHeight="150dp"
+                android:minWidth="180dp"
+                android:src="@drawable/placeholder" />
+
+            <ProgressBar
+                android:id="@+id/pgb_load"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_receiver_time_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="2dp"
+                android:paddingBottom="5dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_receiver_item_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/item_receiver_layout"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_receiver"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
